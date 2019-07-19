@@ -21,7 +21,8 @@ class Solution:
                 return [i, nums.index(target-nums[i])]
 
 test = Solution()
-test.twoSum([2,7,11,15], 9)
+result = test.twoSum([2,7,11,15], 9)
+print(result)
 
 
 解题的大致思路：
