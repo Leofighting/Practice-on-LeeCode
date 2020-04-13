@@ -15,15 +15,6 @@ class ListNode:
 
 class Solution:
     def merge_two_lists(self, l1, l2):
-        if l1 and l2:
-            if l1.val > l2.val:
-                l1, l2 = l2, l1
-                l1.next = self.merge_two_lists(l1.next, l2)
-        return l1 or l2
-
-
-class Solution1:
-    def merge_two_lists(self, l1, l2):
         prehead = ListNode(-1)
         prev = prehead
 
@@ -35,5 +26,5 @@ class Solution1:
                 prev.next = l2
                 l2 = l2.next
             prev = prev.next
+        prev.next = l1 if l1 is not None else l2
         return prehead.next
-    
