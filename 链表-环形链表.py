@@ -7,6 +7,12 @@ __author__ = "leo"
 # 如果 pos 是 -1，则在该链表中没有环。
 
 
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
 class Solution:
     def has_cycle(self, head):
         if not head:
