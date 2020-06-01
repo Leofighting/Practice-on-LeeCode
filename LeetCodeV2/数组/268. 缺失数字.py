@@ -7,6 +7,4 @@ __author__ = "leo"
 
 class Solution:
     def missing_number(self, nums):
-        return int(len(nums)*((1+len(nums))/2)-sum(nums))
-
-
+        return int(len(nums) * ((1 + len(nums)) / 2) - sum(nums))
