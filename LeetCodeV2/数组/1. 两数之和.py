@@ -7,7 +7,9 @@ __author__ = "leo"
 
 
 class Solution:
-    def two_sum(self, nums, target):
+    @staticmethod
+    def two_sum(nums, target):
+        """两数之和"""
         d = {}
         for i, num in enumerate(nums):
             if target - num in d:
